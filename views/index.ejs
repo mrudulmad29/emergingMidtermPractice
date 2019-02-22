@@ -1,0 +1,95 @@
+<% include ./partials/header.ejs %>
+
+<% if (title == "Home") { %>
+<div class="container">
+    <div class="jumbotron">
+      <h1 class="display-4">Welcome to <%= title %></h1>
+        The main purpose of creating this Portfolio is to learn to use ExpressJS and NodeJS efficiently so that it can help me build better technical skills.
+        <a class="btn btn-primary" href="/about" role="button">About</a>
+    </div>
+  </div>
+  <% } %>
+
+  <% if (title == "About") { %>
+    <div class="container">
+        <div class="jumbotron">
+            Mrudul Anil Dubey <br><br>
+            <img src="images/MyImage.jpeg" width="250" height="300"><br>
+            I am pursuing Advanced Diploma in Software Engineering Technology. I also have a Bachelors Degree in Computer Engineering.
+            <br><a class="btn btn-primary" href="files/mrudulfinalresume.pdf" role="button">More</a>
+        </div>
+      </div>
+      <% } %>
+
+      <% if (title == "Projects") { %>
+        <div class="container">
+            <div class="jumbotron">
+                A glimpse of projects <br><br>
+                1. Android Application <br><br>
+                <img src="images/pizzaimg1.png" width="250" height="300">
+                <img src="images/pizzaimg2.png" width="250" height="300"> <br><br>
+                2. Java application<br><br>
+                <img src="images/javaimg1.png" width="250" height="300">
+                <img src="images/javaimg2.png" width="250" height="300"><br><br>
+                3. Data Warehouse and Mining<br><br>
+                <img src="images/dataimg1.png" width="250" height="300">
+                <img src="images/dataimg2.png" width="250" height="300"><br><br>
+            </div>
+          </div>
+          <% } %>
+
+          <% if (title == "Services") { %>
+            <div class="container">
+                <div class="jumbotron">
+                    Techical Skills <br><br>
+                    Mobile Application <br><br>
+                    Web Application<br><br>
+                    <img src="images/webmobileapp.png" width="250" height="300"><br><br><br>
+                   Object Oriented Software Engineering <br><br>
+                   <img src="images/oop.jpg" width="250" height="300"><br>
+                </div>
+              </div>
+              <% } %>
+
+
+              <% if (title == "Contact") { %>
+                <div class="container">
+                    <div class="jumbotron">
+                        Contact Info <br><br>
+                        <div class="panel panel-primary" style="border: 2px solid blue">
+                            <div class="panel-header">
+                            </div>
+                            <div class="panel-body">
+                                Email: mrudulmad29@gmail.com  <br>
+                                Phone: 6479156774
+                                </div>
+                                </div></div>
+
+                                <form action="">
+                                    <div class="container">
+                                    
+                                      <p>Glad to have your contact information</p>
+                                      <hr>
+                                  
+                                      <label for="fullname"><b>Name</b></label>
+                                      <input type="text" placeholder="Enter Full Name" name="fullname" required>
+                                  
+                                      <label for="email"><b>Email</b></label>
+                                      <input type="text" placeholder="Enter Email" name="email" required>
+                                  
+                                      <label for="contact"><b>Contact Number</b></label>
+                                      <input type="password" placeholder="Enter contact Number" name="contact" required>
+                                      
+                                      <br><label for="message"><b>Message</b></label>
+                                      <textarea type="text" placeholder="Enter a message" name="message" required></textarea>
+                                      <hr>
+                                  
+                                      <a role="button" type="submit" class="btn btn-primary" href="/">Submit</a>
+                                    </div>
+                                  
+                                  
+                    </div>
+                  </div>
+                  <% } %>
+
+<% include ./partials/footer.ejs %>
